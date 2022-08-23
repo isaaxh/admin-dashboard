@@ -52,6 +52,7 @@ html {
   list-style-type: none;
   display: grid;
   gap: 1.5rem;
+  margin-bottom: 6rem;
 }
 
 .sidebar li {
