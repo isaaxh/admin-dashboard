@@ -87,6 +87,7 @@ html {
   padding: 0 1rem;
   display: grid;
   grid-template-rows: 1fr 1.5fr;
+  color: var(--primary-color);
 }
 
 .header-row-1 {
@@ -141,6 +142,21 @@ html {
   grid-template-columns: 1fr 3fr 2fr;
   height: 5rem;
   padding: 10px;
+}
+
+.greeting {
+  font-size: 2.5em;
+  font-weight: bold;
+  display: grid;
+  align-items: end;
+}
+
+.greeting .username {
+  font-size: 2rem;
+}
+
+.greeting .username span {
+  font-size: 0.7em;
 }
 
 .header-btns {
