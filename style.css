@@ -85,6 +85,7 @@ html {
 .header {
   background-color: #ffffff;
   padding: 0 1rem;
+  padding-left: 2rem;
   display: grid;
   grid-template-rows: 1fr 1.5fr;
   color: var(--primary-color);
@@ -101,7 +102,7 @@ html {
 }
 
 .search-bar {
-  width: 55rem;
+  width: 50rem;
   margin-left: 0.5rem;
   border-radius: 1rem;
   padding: 0.6rem;
@@ -128,7 +129,7 @@ html {
   color: var(--primary-color);
 }
 
-#profile-img {
+.profile-img {
   border-radius: 50%;
   border: 1px solid var(--primary-color);
   width: 50px;
@@ -139,9 +140,20 @@ html {
 
 .header-row-2 {
   display: grid;
-  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-columns: 0.2fr 3fr 2fr;
   height: 5rem;
   padding: 10px;
+}
+
+.profile-container-row-2 {
+  display: grid;
+  justify-content: start;
+  padding-right: 1rem;
+}
+
+.row-2-img {
+  width: 80px;
+  height: 80px;
 }
 
 .greeting {
