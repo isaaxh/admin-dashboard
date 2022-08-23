@@ -23,10 +23,6 @@ html {
   grid-template-rows: 1fr 5fr;
 }
 
-.container {
-  /* padding: 10px 20px; */
-}
-
 .sidebar {
   background-color: var(--primary-color);
   grid-column: 1 / 2;
@@ -90,7 +86,7 @@ html {
   background-color: #ffffff;
   padding: 0 1rem;
   display: grid;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 1.5fr;
 }
 
 .header-row-1 {
@@ -140,6 +136,27 @@ html {
   object-position: 20% 0%;
 }
 
+.header-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  height: 5rem;
+  padding: 10px;
+}
+
+.header-btns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: end;
+}
+
+.header-btns button {
+  width: 6.5rem;
+  height: 2rem;
+  border-radius: 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+}
 .main-content {
   background-color: var(--background-color);
 }
