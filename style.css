@@ -23,6 +23,11 @@ html {
   grid-template-rows: 1fr 5fr;
 }
 
+ul,
+li {
+  list-style-type: none;
+}
+
 .sidebar {
   background-color: var(--primary-color);
   grid-column: 1 / 2;
@@ -215,14 +220,8 @@ html {
   background-color: #ffff;
   border-radius: 10px;
 }
-/*
-.main-side-content div {
-  border: 1px solid black;
-} */
 
 .main-side-content {
-  /* display: grid; */
-  /* grid-template-rows: 2.5rem 1fr 2.5rem 1fr; */
   display: flex;
   flex-direction: column;
   padding: 15px;
@@ -231,7 +230,6 @@ html {
 
 .announcements-container,
 .trending-container {
-  /* grid-row: 1 / auto; */
   max-width: 300px;
   display: flex;
   flex-direction: column;
@@ -246,15 +244,15 @@ html {
   overflow: auto;
   margin: 0;
 }
-.announcement-card div h5,
-.trending-card div h5 {
-  font-size: 1rem;
-  padding: 0px;
+.announcement-card h5,
+.trending-card h5 {
+  font-size: 0.8rem;
+  padding-bottom: 5px;
   margin: 0px;
 }
 
-.announcement-card div p,
-.trending-card div p {
+.announcement-card .card-text,
+.trending-card .card-text {
   font-size: 0.8rem;
   padding: 0;
   margin: 0;
@@ -268,7 +266,7 @@ html {
 
 .trending-container h2 {
   padding-top: 1rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 1rem;
 }
 .card li {
   margin: 15px 0;
@@ -278,10 +276,6 @@ html {
   font-weight: bold;
   font-size: 0.8rem;
   margin-bottom: 5px;
-}
-
-.card li .card-text {
-  /* font-size: 0.8rem; */
 }
 
 .trending-imgs {
