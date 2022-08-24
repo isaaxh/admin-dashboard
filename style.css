@@ -231,7 +231,7 @@ li {
 }
 
 .main-content .line {
-  background-color: darkgray;
+  background-color: rgb(255, 0, 0);
   border-radius: 10px;
 }
 
