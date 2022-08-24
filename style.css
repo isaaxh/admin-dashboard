@@ -13,7 +13,10 @@ html {
   --primary-color: #2b2b30;
   --background-color: #e7e7f0;
   --secondary-color: #ffff;
-  --accent-color: #d89b89;
+  --accent-color: #867770;
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 .container {
@@ -27,6 +30,13 @@ html {
 ul,
 li {
   list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: var(--primary-color);
 }
 
 .sidebar {
@@ -86,6 +96,8 @@ li {
   padding: 0;
 }
 
+/*Header content*/
+
 .header {
   background-color: #ffffff;
   padding: 0 1rem;
@@ -94,8 +106,7 @@ li {
   grid-template-rows: 1fr 1.5fr;
   gap: 1.5rem;
   color: var(--primary-color);
-  box-shadow: 5px 10px #000000;
-  /* box-shadow: 0 50px 1px 1px rgb(0 0 0 / 100%); */
+  box-shadow: var(--shadow-lg);
 }
 
 .header-row-1 {
@@ -203,6 +214,7 @@ li {
   height: 100%;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
+  box-shadow: var(--shadow);
 }
 
 .main-content {
@@ -231,8 +243,9 @@ li {
 }
 
 .main-content .line {
-  background-color: rgb(255, 0, 0);
+  background-color: var(--accent-color);
   border-radius: 10px;
+  box-shadow: var(--shadow);
 }
 
 .card-container .card {
@@ -246,6 +259,32 @@ li {
   height: 100%;
   display: flex;
   justify-content: flex-end;
+}
+
+.card-container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.card-container .card h5 {
+  font-size: 0.95rem;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.card-container .card p {
+  overflow: hidden;
+  margin: 0;
+}
+
+.card-container .card .actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex: 1;
 }
 
 /* side content of the main container */
