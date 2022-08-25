@@ -131,7 +131,7 @@ button {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   font-weight: 800;
 }
 
@@ -186,6 +186,7 @@ button {
 
 .greeting .username {
   font-size: 2rem;
+  min-width: 260px;
 }
 
 .greeting .username span {
