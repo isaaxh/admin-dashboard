@@ -11,3 +11,5 @@ What I have learned in this project:
 - I have had good amount of practice with these two methods
 - I have learned how to insert icons
 - I have learned how to insert imgs and manipulate them
+
+[LIVE DEMO](https://isaaxh.github.io/admin-dashboard)
